@@ -45,23 +45,23 @@ void ImageCanvas::_initPixmap() {
 }
 
 void ImageCanvas::loadImage(const QString &filename) {
-    if (!_image.isNull() )
-        saveMask();
+	if (!_image.isNull() )
+		saveMask();
 
-    _img_file = filename;
-    QFileInfo file(_img_file);
-    if (!file.exists()) return;
+	_img_file = filename;
+	QFileInfo file(_img_file);
+	if (!file.exists()) return;
 
-    _image = mat2QImage(cv::imread(_img_file.toStdString()));
+	_image = mat2QImage(cv::imread(_img_file.toStdString()));
+	
+	_mask_file = file.dir().absolutePath()+ "/" + file.completeBaseName() + "_mask.png";
+	_watershed_file = file.dir().absolutePath()+ "/" + file.completeBaseName() + "_watershed_mask.png";
 
-    _mask_file = file.dir().absolutePath()+ "/" + file.baseName() + "_mask.png";
-    _watershed_file = file.dir().absolutePath()+ "/" + file.baseName() + "_watershed_mask.png";
-
-    _watershed = ImageMask(_image.size());
-    _undo_list.clear();
-    _undo_index = 0;
-    if (QFile(_mask_file).exists()) {
-        _mask = ImageMask(_mask_file,_ui->id_labels);
+	_watershed = ImageMask(_image.size());
+	_undo_list.clear();
+	_undo_index = 0;
+	if (QFile(_mask_file).exists()) {
+		_mask = ImageMask(_mask_file,_ui->id_labels);
         _ui->runWatershed(this);// button_watershed->released());
         _ui->checkbox_manuel_mask->setChecked(true);
         _undo_list.push_back(_mask);
@@ -86,11 +86,11 @@ void ImageCanvas::saveMask() {
 //         if (!_ui->checkbox_border_ws->isChecked()) {
 //             watershed = removeBorder(_watershed.id, _ui->id_labels);
 //         }
-        watershed.save(_watershed_file);
-        QFileInfo file(_img_file);
-        QString color_file = file.dir().absolutePath() + "/" + file.baseName() + "_color_mask.png";
-        idToColor(watershed, _ui->id_labels).save(color_file);
-    }
+		watershed.save(_watershed_file);
+		QFileInfo file(_img_file);
+		QString color_file = file.dir().absolutePath() + "/" + file.completeBaseName() + "_color_mask.png";
+		idToColor(watershed, _ui->id_labels).save(color_file);
+	}
     _undo_list.clear();
     _undo_index = 0;
     _ui->setStarAtNameOfTab(false);
