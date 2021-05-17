@@ -47,9 +47,8 @@ endif()
 
 # ---------------------- MANAGING VERSION NUMBER ----------------------
 
-find_path(Qt5Widgets_DIR Qt5WidgetsConfig.cmake PATHS "${QT5_DIR}/Qt5Widgets" )
-find_path(Qt5Gui_DIR Qt5GuiConfig.cmake         PATHS "${QT5_DIR}/Qt5Gui"     )
-	
+find_path(Qt5Widgets_DIR Qt5WidgetsConfig.cmake PATHS "/usr/local/Cellar/qt@5/5.15.2/lib/cmake/Qt5Widgets" )
+find_path(Qt5Gui_DIR Qt5GuiConfig.cmake         PATHS "/usr/local/Cellar/qt@5/5.15.2/lib/cmake/Qt5Gui"     )
 find_package(Qt5Widgets REQUIRED)
 find_package(Qt5Gui REQUIRED)
 find_package(OpenCV REQUIRED)
