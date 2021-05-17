@@ -1,6 +1,23 @@
 PixelAnnotationTool
 ============================
 
+##BUILD INSTRUCTIONS
+
+install Xcode then...
+
+```
+brew install opencv && brew install cmake && brew install qt
+git clone https://github.com/abreheret/PixelAnnotationTool.git
+cd PixelAnnotationTool
+mkdir x64
+cd x64
+cmake -DQT5_DIR=/usr/local/Cellar/qt/5.12.3/lib/cmake -G "Unix Makefiles" ..
+make all
+open PixelAnnotationTool.app/
+```
+
+https://github.com/abreheret/PixelAnnotationTool/issues/23#issuecomment-520884964
+
 -----------------
 | **` Linux/MAC `** | **` Windows `** | **` Donate  `** | 
 |-----------------|---------------------|---------------------|
