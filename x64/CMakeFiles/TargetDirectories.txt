@@ -1,0 +1,6 @@
+/Users/griffith/Downloads/PixelAnnotationTool/x64/CMakeFiles/rebuild_cache.dir
+/Users/griffith/Downloads/PixelAnnotationTool/x64/CMakeFiles/edit_cache.dir
+/Users/griffith/Downloads/PixelAnnotationTool/x64/CMakeFiles/upload_file.dir
+/Users/griffith/Downloads/PixelAnnotationTool/x64/CMakeFiles/deploy_qt.dir
+/Users/griffith/Downloads/PixelAnnotationTool/x64/CMakeFiles/PixelAnnotationTool.dir
+/Users/griffith/Downloads/PixelAnnotationTool/x64/CMakeFiles/PixelAnnotationTool_autogen.dir
