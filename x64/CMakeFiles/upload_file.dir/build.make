@@ -68,7 +68,7 @@ include CMakeFiles/upload_file.dir/progress.make
 
 CMakeFiles/upload_file:
 	echo ===\ upload_file\ ===
-	curl --upload-file /Users/griffith/Downloads/PixelAnnotationTool/x64/PixelAnnotationTool_x86_64_v1.4.0-25-g202abc7/PixelAnnotationTool.dmg https://transfer.sh/PixelAnnotationTool_x86_64_v1.4.0-25-g202abc7.dmg
+	curl --upload-file /Users/griffith/Downloads/PixelAnnotationTool/x64/PixelAnnotationTool_x86_64_v1.4.0-26-gc985131/PixelAnnotationTool.dmg https://transfer.sh/PixelAnnotationTool_x86_64_v1.4.0-26-gc985131.dmg
 
 upload_file: CMakeFiles/upload_file
 upload_file: CMakeFiles/upload_file.dir/build.make

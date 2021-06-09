@@ -68,7 +68,7 @@ include CMakeFiles/deploy_qt.dir/progress.make
 
 CMakeFiles/deploy_qt: PixelAnnotationTool.app/Contents/MacOS/PixelAnnotationTool
 	echo ===\ macdeployqt\ ===
-	/macdeployqt /Users/griffith/Downloads/PixelAnnotationTool/x64/PixelAnnotationTool_x86_64_v1.4.0-25-g202abc7/PixelAnnotationTool.app -dmg
+	/macdeployqt /Users/griffith/Downloads/PixelAnnotationTool/x64/PixelAnnotationTool_x86_64_v1.4.0-26-gc985131/PixelAnnotationTool.app -dmg
 
 deploy_qt: CMakeFiles/deploy_qt
 deploy_qt: CMakeFiles/deploy_qt.dir/build.make

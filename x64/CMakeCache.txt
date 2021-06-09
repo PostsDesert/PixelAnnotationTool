@@ -223,7 +223,7 @@ PixelAnnotationTool_SOURCE_DIR:STATIC=/Users/griffith/Downloads/PixelAnnotationT
 QMAKE_APP:FILEPATH=/usr/local/bin/qmake
 
 //Additional search paths for QT5
-QT5_DIR:STRING=/usr/local/Cellar/qt/5.15.2/lib/cmake
+QT5_DIR:STRING=/usr/local/Cellar/qt/5.12.3/lib/cmake
 
 //The directory containing a CMake configuration file for Qt5Core.
 Qt5Core_DIR:PATH=/usr/local/Cellar/qt@5/5.15.2/lib/cmake/Qt5Core
