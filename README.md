@@ -1,7 +1,7 @@
 PixelAnnotationTool
 ============================
 
-##BUILD INSTRUCTIONS
+##BUILD INSTRUCTIONS FOR MACOS BIG SUR
 
 install Xcode then...
 
